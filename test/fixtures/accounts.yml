@@ -1,0 +1,11 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  expense: 1
+  title: MyString
+  datetime: 2015-05-04 20:15:59
+
+two:
+  expense: 1
+  title: MyString
+  datetime: 2015-05-04 20:15:59

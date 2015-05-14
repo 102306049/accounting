@@ -1,0 +1,20 @@
+<h2>Account APP</h2>
+<br>
+	<% if user_signed_in? %>
+	<%=current_user.username%>你好	
+	<%= link_to "新增帳目", new_account_path %>
+	<% @accounts.each do |account|%>
+	
+	<h4>項目: <%= account.title%> ;花費金額: $<%= account.expense%>
+	<%= link_to "刪除此紀錄", account_path(account),method:"delete"  %>
+	</h4> 
+	<% end %>
+	<% else %>
+	立即<%= link_to "登入", new_user_session_path %>，從現在開始記錄你每天的花費
+	
+
+
+
+
+<% end %>
+

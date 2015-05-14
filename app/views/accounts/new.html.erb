@@ -1,0 +1,18 @@
+<h2>新增帳目</h2>
+
+<%= form_for  @account do |f|%>
+<div>
+
+	項目
+	<%= f.select :title, options_for_select(["請選擇", "home", "personal", "food", "car", "shopping"],:disabled => ["請選擇"]) %>
+</div>
+<div>
+	花費金額
+	<%=f.text_field :expense %>
+</div>
+<div>
+	<%=f.hidden_field :datetime %>
+</div>
+
+<%=f.submit %>
+<%end%>
